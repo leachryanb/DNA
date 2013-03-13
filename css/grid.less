@@ -4,8 +4,8 @@
 *
 */
 
-@cols: 12;
-@width: 8.333%;
+@cols: 10;
+@width:(100% / @cols);
 .width(@colNum: 1) {
 	width: (@width * @colNum);
 }
