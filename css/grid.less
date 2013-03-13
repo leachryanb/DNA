@@ -1,0 +1,47 @@
+/*
+*
+* DNA
+*
+*/
+
+@cols: 12;
+@width: 8.333%;
+.width(@colNum: 1) {
+	width: (@width * @colNum);
+}
+
+.row {
+	width: 100%;
+	margin-bottom: 15px;
+
+	> [class*="col"] {
+		padding: 10px;
+		display: inline-block;
+		float: left;
+		box-sizing: border-box;
+		&:first-child {
+			padding-left: 0;
+		}
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+
+	&:after {
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+	}
+
+	.loop (@colNum) when (@colNum > 0) {
+		(~".col@{colNum}") {
+			.width(@colNum);
+		}
+		.loop(@colNum - 1);
+	}
+	.loop (0) {}
+	.loop (@cols);
+}
