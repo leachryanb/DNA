@@ -4,29 +4,43 @@
 *
 */
 
-@cols: 10;
-@width:(100% / @cols);
+// STEP 1:
+// enter the number of columns you want
+@cols: 12;
+
+// STEP 2:
+// enter the max page width
+@pgWidth: 70em;
+
+
+// DONT TOUCH BELOW HERE
+@width:(@pgWidth / @cols);
 .width(@colNum: 1) {
 	width: (@width * @colNum);
 }
-
+body {
+	width: @pgWidth;
+	margin: 0 auto;
+}
 .row {
 	width: 100%;
-	margin-bottom: 15px;
-
+	//margin-bottom: .5em;
+	// base column styles
 	> [class*="col"] {
-		padding: 10px;
+		padding: 0 .5em 1em;
 		display: inline-block;
 		float: left;
 		box-sizing: border-box;
+		// removing the padding on the first column
 		&:first-child {
 			padding-left: 0;
 		}
+		// removing the padding on the last column
 		&:last-child {
 			padding-right: 0;
 		}
 	}
-
+	// clearing
 	&:after {
 		visibility: hidden;
 		display: block;
@@ -35,7 +49,7 @@
 		clear: both;
 		height: 0;
 	}
-
+	// setting up the columns and width based on variables
 	.loop (@colNum) when (@colNum > 0) {
 		(~".col@{colNum}") {
 			.width(@colNum);
