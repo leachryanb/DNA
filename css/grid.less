@@ -6,7 +6,7 @@
 
 // STEP 1:
 // enter the number of columns you want
-@cols: 12;
+@cols: 16;
 
 // STEP 2:
 // enter the max page width
@@ -38,6 +38,13 @@ body {
 		// removing the padding on the last column
 		&:last-child {
 			padding-right: 0;
+		}
+		// just to show columns
+		&:nth-child(odd) {
+			border-top: solid 1px #333;
+		}
+		&:nth-child(even) {
+			border-top: solid 1px #999;
 		}
 	}
 	// clearing
