@@ -1,154 +1,225 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <title>DNA: Content Types</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-us"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en-us"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en-us"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>DNA: Content Types</title>
+	<meta name="description" content="DNA: Examples of different content types.">
+	<meta name="viewport" content="width=device-width">
 
+	<link rel="stylesheet/less" type="text/css" href="../css/master.less" />
 
-    </head>
-    <body>
+	<script type="text/javascript" src="../js/less.js"></script>
+	<script type="text/javascript" src="../js/modernizr.custom.js"></script>
 
-	<h1>Heading 1</h1>
-	<h2>Heading 2</h2>
-	<h3>Heading 3</h3>
-	<h4>Heading 4</h4>
-	<h5>Heading 5</h5>
-	<h6>Heading 6</h6>
-	<p>Paragraph</p>
+</head>
+<body>
+<header role="banner">
+
+	<h1>Content Styles</h1>
+	<p>The following is an sample of styles for basic types of content typically found in an HTML document.</p>
+	
 	<hr>
-	<pre>Preformated text</pre>
-	<blockquote>Blockquote</blockquote>
+</header>
+<section id="mainContent" role="main">
+
+
+	<section class="sample">
+	<h1>Sample of Headings &amp; Paragraphs Together</h1>
+	
+	<p>In typography, there are four standard types of dashes: the hyphen, the en-dash, the em-dash, and the three-em-dash.</p>
+
+	<p>Originally, printers called these the "em-dash" because it was the same width as the capital letter M in whichever font they were using, the "en-dash" because it was the same width as the capital letter N, and the "three-em-dash" because it was as long as three capital Ms.</p>
+	
+	<p>The hyphen is used for hyphenated words, like "en-dash" itself, or "to-day" or "drawing-room". For this, you just press the single dash or hyphen key on your keyboard.</p>
+	
+	<h2>Longer than the Hyphen</h2>
+	<p>In typography, the en-dash is a little longer than the hyphen, and is typically used for duration, where you could substitute the word "to". For example, if you were printing "1830&ndash;1874", or "9:00&ndash;5:30", you would use an en-dash instead of a hyphen. The en-dash is also sometimes used as hyphenation between words that are already hyphenated, for example, "bed-room&ndash;sitting-room" might use an en-dash as its central dash to emphasize that it is a different type of separator from the plain hyphens before "room". However, there is no ASCII character for an en-dash, and we use the hyphen in these cases. (HTML and some character sets do provide separate entities for en-dash and em-dash.)</p>
+
+	<h3>Pointing has no control</h3>
+	
+	The em-dash is shown in print as a longer dash, and for <abbr title="Project Guttenburg">PG</abbr> purposes, you should render it as two hyphens with no spaces around them.</p>
+
+	<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+
+
+	<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+	
+	<h4>The Big Oxmox</h4>
+	
+	<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+
+	<h5>Italic Mountains</h5>
+
+	<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+	
+	<h6>She Met a Copy</h6>
+	
+	<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
+	<blockquote> 
+		<p>"Typesetting machines generally devide the em into units. Ems of 18, 36, or 54 units, for example, are commonly found in older machines. In newer devices, the em is generally a thousand units. Typographers are more likely to divide the em into simple fractions: half an em, a third of an em, and so on, knowing that the value of these fractions will vary from one machine to the next. Half an em is called an <em>en</em>."</p>
+		<p class="credit"><em>The Elements of Typographic Style. Robert Bringhurst</em></p>
+	</blockquote>
+</section>
+
+<hr>
+
+<h2>Inline Elements</h2>
+<ul>
+	<li><a href="http://www.quadraisland.ca/about/">link</a></li>
+</ul>
+<dl>
+	<dt><strong>strong</strong></dt>
+	<dd>strong importance</dd>
+	<dt><b>bold</b></dt>
+	<dd>stylistically offset</dd>
+	<dt><em>em</em></dt>
+	<dd>stress emphasis (<a class="external-link" href="http://www.w3.org/html/wg/drafts/html/master/text-level-semantics.html#the-em-element">w3.org: the em element</a>)</dd>
+	<dt><i>italic</i></dt>
+	<dd>alternate voice</dd>
+	<dt><small>small</small></li>
+	<dd></dd>
+	<dt><s>s</s></li>
+	<dd>strike through</dd>
+	<dt>cite</dt>
+	<dd>Represents the title of a work  in a citation or bibliography (<a href="http://www.w3.org/html/wg/drafts/html/master/text-level-semantics.html#the-cite-element">w3.org: the cite element</a>)</dd>
+	<dt><dfn>dfn</dfn></dt>
+	<dd>defining instance of a word</dd>
+	<dt>quote</dt>
+	<dd></dd>
+	<dt>blockquote</dt>
+	<dd>content from another source</dd>
+	<dt><var>var</var></dt>
+	<dd>mathematical variables</dd>
+</dl>
+<hr>
+
+<h2>Lists</h2>
+
+<h3>Ordered Lists Types</h3>
 	<ol>
 		<li>Ordered List</li>
-		<li>Type: Alpha</li>
+		<li>Type: Default (decimal)
+			<ol>
+				<li>Ordered List</li>
+				<li>Nested
+					<ol>
+						<li>Ordered List</li>
+						<li>Nested</li>
+					</ol>
+				</li>
+			</ol>
+		</li>
 	</ol>
 
+	<ol class="upper-alpha">
+		<li>Ordered List</li>
+		<li>Type: upper-alpha</li>
+	</ol>
+	<ol class="lower-alpha">
+		<li>Ordered List</li>
+		<li>Type: lower-alpha</li>
+	</ol>
+
+	<ol class="upper-roman">
+		<li>Ordered List</li>
+		<li>Type: upper-roman</li>
+	</ol>
+	<ol class="lower-roman">
+		<li>Ordered List</li>
+		<li>Type: lower-roman</li>
+	</ol>
+	
+<h3>Unordered Lists Types</h3>
 	<ul>
 		<li>Unordered List</li>
-		<li>Type: Bullet</li>
+		<li>Type: Bullet/Default (disc)
+			<ul>
+				<li>Unordered List</li>
+				<li>Type: Bullet/Default (disc)
+					<ul>
+						<li>Unordered List</li>
+						<li>Type: Bullet/Default (disc)</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="circle">
+		<li>Unordered List</li>
+		<li>Type: Circle</li>
+	</ul>
+	<ul class="square">
+		<li>Unordered List</li>
+		<li>Type: square</li>
 	</ul>
 	
+<h3>Definition List</h3>
 	<dl>
-		<dt>Definition List</dt>
-		<dd>Definition</dd>
+		<dt>Uppercase</dt>
+		<dd><p>The capital letters of the alphabet are uppercase glyphs. Uppercase letters are normally used at the beginning of sentences and as the first letter of proper names.</p>
+
+		<p>The term uppercase is derived from the days of metal type where the lesser used capital letters were kept in the harder to reach upper case while the more frequently used letters were kept nearer at hand, in the lower case.</p></dd>
+		<dt>Lowercase</dt>
+		<dd><p>The little letters or non-capital letters of the alphabet are lowercase glyphs. They make up the bulk of written text, with uppercase or capital letters used primarily only to start sentences or proper names.</p>
+		
+		<p>The term lowercase is derived from the days of metal type where the more frequently used letters were kept near at hand in the lower case while the less frequently used capital letters were kept in the harder to reach upper case.</p></dd>
 	</dl>
+<hr>
 	<figure>Figure.<figcaption>Figure caption.</figcaption></figure>
 	
-	<table>
-	<caption>Table caption.</caption>
-		<thead>
-			<tr>
-				<th scope="col">Base</th>
-				<th scope="col">Tier 1</th>
-				<th scope="col">Tier 2</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Fundamental layouts and design principles.</td>
-				<td>Additional style.</td>
-				<td>Additional style and interactivity.</td>
-			</tr>
-		</tbody>
-		<tfoot>
-			<tr>
-				<td colspan="3">table footer</td>
-			</tr>
-		</tfoot>
-	</table>
-	<form>
-		<fieldset>
-			<legend>Input Types</legend>
-			<label for="text">Label for Text input</label>
-			<input type="text" id="text">
-			<label for="search">Label for Search input</label>
-			<input type="search" id="search">
-			<label for="tel">Label for Telephone input</label>
-			<input type="telephone" id="telephone">
-			<label for="url">Label for URL input</label>
-			<input type="url" id="url">
-			<label for="email">Label for Email input</label>
-			<input type="email" id="email">
-			<label for="password">Label for password input</label>
-			<input type="password" id="password">
-			<label for="datetime">Label for datetime input</label>
-			<input type="datetime" id="datetime">
-			<label for="date">Label for date input</label>
-			<input type="date" id="date">
-			<label for="month">Label for month input</label>
-			<input type="month" id="month">
-			<label for="week">Label for week input</label>
-			<input type="week" id="week">
-			<label for="time">Label for time input</label>
-			<input type="time" id="time">
-			<label for="datetime-local">Label for datetime-local input</label>
-			<input type="datetime-local" id="datetime-local">
-			<label for="number">Label for Number input</label>
-			<input type="number" id="number">
-			<label for="range">Label for range input</label>
-			<input type="range" id="range">
-			<label for="color">Label for color input</label>
-			<input type="color" id="color">
-			<label for="checkbox">Label for checkbox input</label>
-			<input type="checkbox" id="checkbox">
-			<label for="radio">Label for radio input</label>
-			<input type="radio" id="radio">
-			<label for="submit">Label for submit input</label>
-			<input type="submit" id="submit">
-			<label for="file">Label for file input</label>
-			<input type="file" id="file">
-			<label for="image">Label for image input</label>
-			<input type="image" id="image" src="http://validator.w3.org/images/info_icons/error.png">
-			<label for="reset">Label for reset input</label>
-			<input type="reset" id="reset">
-			<label for="button">Label for button input</label>
-			<input type="button" id="button">
+<h3>Table</h3>
 
-			</fieldset>
-			<fieldset>
-				<legend>Buttons</legend>
-				<button type="submit">Submit</button>
-				<button type="reset">Reset</button>
-				<button type="button">Button</button>
-				<button type="menu">Menu</button>
-			</fieldset>
-			<fieldset>
-				<legend>Select</legend>
-				<label for="Select">Select DNA</label>
-				<select id="Select" name="Select">
-					<option value="base">Base</option>
-					<optgroup label="Presentation Layers">
-						<option value="t1">Tier 1</option>
-						<option value="t3">Tier 2</option>
-					</option>
-				</select>
-			</fieldset>
-			<fieldset>
-				<legend>Datalist</legend>
-				<label>Enter your style type:
-				<input type="text" name="style" list="styles">
-				  <datalist id="styles">
-						<option value="style1">Default</option>
-						<option value="style2">Reverse</option>
-						<option value="style3">Contrast</option>
-				  </datalist>
-				</label>
-			</fieldset>
-			<fieldset>
-				<legend>Textarea</legend>
-				<textarea></textarea>
-			</fieldset>
-			<fieldset>
-				<legend>Progress:</legend>
-				<p>Progress: <progress id="p" max="100" value="75"><span>50</span>%</progress></p>
-				 <!-- Further info: http://www.useragentman.com/blog/2012/01/03/cross-browser-html5-progress-bars-in-depth/ -->
-Your score is: <meter> 2 out of 10 </meter>
-			</fieldset>
-		</form>
+<table>
+	<caption>Summary of dashes</caption>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>ASCII</th>
+			<th>HTML</th>
+			<th>Used for</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Hyphen</td>
+			<td> - </td>
+			<td> &#45; <code>(&amp;#45;)</code> </td>
+			<td>Hyphenated Words</td>
+		</tr>
+		<tr>
+			<td>En-dash</td>
+			<td>-</td>
+			<td>&ndash; (<code>&amp;ndash;</code>)</td>
+			<td>Durations, like 1914-18</td>
+		</tr>
+		<tr>
+			<td>Em-dash</td>
+			<td> -- </td>
+			<td>&mdash; (<code>&amp;mdash;</code>)</td>
+			<td> Break in sentence or parenthetical comment</td>
+		</tr>
+	</tbody>
+</table>
+
+	<h2>Preformated text</h2>
+
+<pre>
+  Eruption                      Date           Volume in km^3
+  --------                      ----           --------------
+  Paricutin, Mexico             1943                 1.3
+  Mt. Vesuvius, Italy          79 A.D.                3
+  Mount St. Helen, Washington   1980                  4
+  Krakatoa, Indonesia           1883                 18
+  Long Valley, California     pre-historic        500 - 600
+  Yellowstone, Wyoming        pre-historic           2400
+</pre>
+
+</section>
+<footer role="contentinfo">
+</footer>
 </body>
 </html>

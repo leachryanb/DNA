@@ -4,76 +4,123 @@
 *
 */
 
+#mainContent
+{
+
+	h1, h2, h3, h4, h5, h6
+	{
+		margin: 1em 0 1rem;
+		font-size: 1em;
+		line-height: 1.2;
+	}
+	h1 
+	{
+		font-size: 3.5em;
+		line-height: 1.1;
+	}
+	h2 
+	{
+		font-size: 2.25em;
+	}
+	h3 
+	{
+		margin: 1em 0 .5rem;
+		font-size: 1.5em;
+	}
+	h4 
+	{
+		margin: 1em 0 .25rem;
+		font-size: 1.25em;
+	}
+	h5, h6 
+	{
+
+		margin: .5em 0 .125rem;
+		font-size: 1.125em;
+		line-height: 1.4;
+	}
+	h6 
+	{
+		margin: .5em 0 0;
+		font-size: 1em;
+	}
+
+	p
+	{
+		margin: 0 0 1.25em;
+	}
+}
+
 
 /* BLOCKQUOTES */
-blockquote {
-
+blockquote {}
+blockquote .credit 
+{
+	text-align: right;
+	font-style: italic;
 }
 
-/* TABLE */
-table {
+#mainContent{
 
+	/* TABLE */
+	table
+	{
+		margin: 1em 0 2em;
+	}
+	caption
+	{
+		padding: 0 0 .5em;
+		font-style: italic;
+	}
+
+	thead {}
+	tbody {}
+	tfoot {}
+
+	thead tr
+	{
+		border-bottom: solid 2px #ccc;
+	}
+	tr
+	{
+		border-bottom: solid 1px #ddd;
+	}
+	tbody tr:last-child,
+	tfoot tr
+	{
+		border-bottom: none;
+	}
+	td
+	{
+		padding: .5em;
+		border-right: solid 1px #ddd;
+	}
+	tbody td:last-child,
+	tfoot td
+	{
+		border-right: none;
+	}
 }
+/* end TABLE */
 
-caption {
 
-}
-
-colgroup {
-
-}
-
-col {
-
-}
-
-tbody {
-
-}
-
-thead {
-
-}
-
-tfoot {
-
-}
-
-tr {
-
-}
-
-td {
-
-}
-
-th {
-
-}
 
 /* LISTS */
-ol {
 
-}
+#mainContent
+{
+	.decimal {list-style: decimal;}
+	.lower-alpha {list-style: lower-alpha;}
+	.upper-alpha {list-style: upper-alpha;}
+	.lower-roman {list-style: lower-roman;}
+	.upper-roman {list-style: upper-roman;}
 
-ul {
-
-}
-
-li {
-
-}
-
-dl {
-
-}
-
-dt {
-
-}
-
-dd {
-
+	.disc {list-style: disc;}
+	.circle {list-style: circle;}
+	.square {list-style: square;}
+	
+	dt {}
+	dd {}
 }
 
 /* PRE */

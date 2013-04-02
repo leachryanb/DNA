@@ -1,0 +1,175 @@
+/*
+*
+* DNA
+*
+*/
+
+.col,
+.section
+{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.col
+{
+	float: left;
+	width: 100%;
+}
+/*
+* l1 = layout1 = one colum (default or layout undefined)
+* l2 = layout2 = two column
+* l3 = layout3 = three colunm
+* l4 = layout4 = four column
+* l5 = layout5 = five column
+*/
+/*
+* p1 = pattern1
+* p2 = pattern2
+* p3 = pattern3
+* etc.
+*/
+.l2
+{
+	> .col
+	{
+		width: 50%;
+	}
+	
+	&.pl
+	{
+		> .col:nth-child(1)
+		{
+			width: 40%;
+		}
+		> .col:nth-child(2)
+		{
+			width: 60%;
+		}
+	}
+	&.p2
+	{
+		> .col:nth-child(1)
+		{
+			width: 30%;
+		}
+		> .col:nth-child(2)
+		{
+			width: 70%;
+		}
+	}
+	&.p3
+	{
+		> .col:nth-child(1)
+		{
+			width: 20%;
+		}
+		> .col:nth-child(2)
+		{
+			width: 80%;
+		}
+	}
+	&.p4
+	{
+		> .col:nth-child(1)
+		{
+			width: 60%;
+		}
+		> .col:nth-child(2)
+		{
+			width: 40%;
+		}
+	}
+	&.p5
+	{
+		> .col:nth-child(1)
+		{
+			width: 70%;
+		}
+		> .col:nth-child(2)
+		{
+			width: 30%;
+		}
+	}
+	&.p6
+	{
+		> .col:nth-child(1)
+		{
+			width: 80%;
+		}
+		> .col:nth-child(2)
+		{
+			width: 20%;
+		}
+	}
+
+
+}
+.l3
+{
+	> .col
+	{
+		width: 33.33%;
+	}
+	&.p1
+	{
+		> .col:nth-child(1)
+		{
+			width: 20%;
+		}
+		> .col:nth-child(2)
+		{
+			width: 60%;
+		}
+		> .col:nth-child(3)
+		{
+			width: 20%;
+		}
+	}
+	&.p2
+	{
+		> .col:nth-child(1)
+		{
+			width: 20%;
+		}
+		> .col:nth-child(2)
+		{
+			width: 20%;
+		}
+		> .col:nth-child(3)
+		{
+			width: 60%;
+		}
+	}
+	&.p3
+	{
+		> .col:nth-child(1)
+		{
+			width: 60%;
+		}
+		> .col:nth-child(2)
+		{
+			width: 20%;
+		}
+		> .col:nth-child(3)
+		{
+			width: 20%;
+		}
+	}
+}
+.l4
+{
+	> .col
+	{
+		width: 25%;
+	}
+}
+.l5
+{
+	> .col
+	{
+		width: 20%;
+	}
+}
+

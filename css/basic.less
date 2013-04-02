@@ -1,0 +1,45 @@
+@import "normalize.css";
+@import "layout.less";
+
+
+/* STRUCTURAL */
+header,
+footer 
+{
+	clear: both;
+}
+/* END STRUCTURAL */
+
+
+
+/* HELPERS */
+.clearfix 
+{
+	*zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after 
+{
+	display: table;
+	line-height: 0;
+	content: "";
+}
+.clearfix:after 
+{
+	clear: both;
+}
+.hidden
+{
+	position: absolute !important;
+	height: 1px; 
+	width: 1px; 
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+.hide
+{
+	display: none;
+}
+/* END HELPERS */
