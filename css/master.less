@@ -1,21 +1,9 @@
 @import "normalize.css";
-@import "content-type.css";
+@import "variables.less";
+@import "mixins.less";
+@import "basic.less";
+@import "content-type.less";
 @import "font.less";
-@import "grid.less";
 @import "forms.less";
+@import "grid.less";
 @import "layout.css";
-
-/* Common Visual Styling */
-.rounded (@radius: 5px) {
-	-webkit-border-radius: @radius;
-	-moz-border-radius: @radius;
-	-ms-border-radius: @radius;
-	-o-border-radius: @radius;
-	qborder-radius: @radius;
-}
-
-.shadow (@box-shadow: 1px 1px 2px rgba(0,0,0, .2);) {
-	-moz-box-shadow: @box-shadow;
-	-webkit-box-shadow: @box-shadow;
-	box-shadow: @box-shadow;
-}

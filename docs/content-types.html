@@ -8,9 +8,9 @@
 	<title>DNA: Content Types</title>
 	<meta name="description" content="DNA: Examples of different content types.">
 	<meta name="viewport" content="width=device-width">
-
+	
+	<link rel="stylesheet" type="text/css" href="../docs/display.less" />
 	<link rel="stylesheet/less" type="text/css" href="../css/master.less" />
-
 	<script type="text/javascript" src="../js/less.js"></script>
 	<script type="text/javascript" src="../js/modernizr.custom.js"></script>
 
@@ -18,15 +18,28 @@
 <body>
 <header role="banner">
 
-	<h1>Content Styles</h1>
+	<h1><a href="../index.html">DNA</a></h1>
+	<p>DNA is a simple CSS framework</p>
+	<hr/>
+	<ul>
+		<li><a href="layouts-basic.html">Page Layouts</a></li>
+		<li><a href="layouts-seo.html">Page Layouts for SEO</a></li>
+		<li><a href="content-types.html">Content Types</a></li>
+		<li><a href="grid.html">Grids</a></li>
+		<li><a href="form-elements.html">Form Elements</a></li>
+	</ul>
+
+	<hr/>
+
+	<h2>Content Styles</h2>
+	
 	<p>The following is an sample of styles for basic types of content typically found in an HTML document.</p>
 	
 	<hr>
+
 </header>
-<section id="mainContent" role="main">
 
-
-	<section class="sample">
+<section class="sample">
 	<h1>Sample of Headings &amp; Paragraphs Together</h1>
 	
 	<p>In typography, there are four standard types of dashes: the hyphen, the en-dash, the em-dash, and the three-em-dash.</p>
@@ -36,6 +49,7 @@
 	<p>The hyphen is used for hyphenated words, like "en-dash" itself, or "to-day" or "drawing-room". For this, you just press the single dash or hyphen key on your keyboard.</p>
 	
 	<h2>Longer than the Hyphen</h2>
+	
 	<p>In typography, the en-dash is a little longer than the hyphen, and is typically used for duration, where you could substitute the word "to". For example, if you were printing "1830&ndash;1874", or "9:00&ndash;5:30", you would use an en-dash instead of a hyphen. The en-dash is also sometimes used as hyphenation between words that are already hyphenated, for example, "bed-room&ndash;sitting-room" might use an en-dash as its central dash to emphasize that it is a different type of separator from the plain hyphens before "room". However, there is no ASCII character for an en-dash, and we use the hyphen in these cases. (HTML and some character sets do provide separate entities for en-dash and em-dash.)</p>
 
 	<h3>Pointing has no control</h3>
@@ -44,10 +58,8 @@
 
 	<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
 
-
 	<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
 
-	
 	<h4>The Big Oxmox</h4>
 	
 	<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn't listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
@@ -59,6 +71,7 @@
 	<h6>She Met a Copy</h6>
 	
 	<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
+	
 	<blockquote> 
 		<p>"Typesetting machines generally devide the em into units. Ems of 18, 36, or 54 units, for example, are commonly found in older machines. In newer devices, the em is generally a thousand units. Typographers are more likely to divide the em into simple fractions: half an em, a third of an em, and so on, knowing that the value of these fractions will vary from one machine to the next. Half an em is called an <em>en</em>."</p>
 		<p class="credit"><em>The Elements of Typographic Style. Robert Bringhurst</em></p>
@@ -100,62 +113,62 @@
 <h2>Lists</h2>
 
 <h3>Ordered Lists Types</h3>
-	<ol>
-		<li>Ordered List</li>
-		<li>Type: Default (decimal)
-			<ol>
-				<li>Ordered List</li>
-				<li>Nested
-					<ol>
-						<li>Ordered List</li>
-						<li>Nested</li>
-					</ol>
-				</li>
-			</ol>
-		</li>
-	</ol>
+<ol>
+	<li>Ordered List</li>
+	<li>Type: Default (decimal)
+		<ol>
+			<li>Ordered List</li>
+			<li>Nested
+				<ol>
+					<li>Ordered List</li>
+					<li>Nested</li>
+				</ol>
+			</li>
+		</ol>
+	</li>
+</ol>
 
-	<ol class="upper-alpha">
-		<li>Ordered List</li>
-		<li>Type: upper-alpha</li>
-	</ol>
-	<ol class="lower-alpha">
-		<li>Ordered List</li>
-		<li>Type: lower-alpha</li>
-	</ol>
+<ol class="upper-alpha">
+	<li>Ordered List</li>
+	<li>Type: upper-alpha</li>
+</ol>
+<ol class="lower-alpha">
+	<li>Ordered List</li>
+	<li>Type: lower-alpha</li>
+</ol>
 
-	<ol class="upper-roman">
-		<li>Ordered List</li>
-		<li>Type: upper-roman</li>
-	</ol>
-	<ol class="lower-roman">
-		<li>Ordered List</li>
-		<li>Type: lower-roman</li>
-	</ol>
+<ol class="upper-roman">
+	<li>Ordered List</li>
+	<li>Type: upper-roman</li>
+</ol>
+<ol class="lower-roman">
+	<li>Ordered List</li>
+	<li>Type: lower-roman</li>
+</ol>
 	
 <h3>Unordered Lists Types</h3>
-	<ul>
-		<li>Unordered List</li>
-		<li>Type: Bullet/Default (disc)
-			<ul>
-				<li>Unordered List</li>
-				<li>Type: Bullet/Default (disc)
-					<ul>
-						<li>Unordered List</li>
-						<li>Type: Bullet/Default (disc)</li>
-					</ul>
-				</li>
-			</ul>
-		</li>
-	</ul>
-	<ul class="circle">
-		<li>Unordered List</li>
-		<li>Type: Circle</li>
-	</ul>
-	<ul class="square">
-		<li>Unordered List</li>
-		<li>Type: square</li>
-	</ul>
+<ul>
+	<li>Unordered List</li>
+	<li>Type: Bullet/Default (disc)
+		<ul>
+			<li>Unordered List</li>
+			<li>Type: Bullet/Default (disc)
+				<ul>
+					<li>Unordered List</li>
+					<li>Type: Bullet/Default (disc)</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+<ul class="circle">
+	<li>Unordered List</li>
+	<li>Type: Circle</li>
+</ul>
+<ul class="square">
+	<li>Unordered List</li>
+	<li>Type: square</li>
+</ul>
 	
 <h3>Definition List</h3>
 	<dl>
@@ -169,7 +182,8 @@
 		<p>The term lowercase is derived from the days of metal type where the more frequently used letters were kept near at hand in the lower case while the less frequently used capital letters were kept in the harder to reach upper case.</p></dd>
 	</dl>
 <hr>
-	<figure>Figure.<figcaption>Figure caption.</figcaption></figure>
+
+<figure>Figure.<figcaption>Figure caption.</figcaption></figure>
 	
 <h3>Table</h3>
 
@@ -205,7 +219,7 @@
 	</tbody>
 </table>
 
-	<h2>Preformated text</h2>
+<h2>Preformated text</h2>
 
 <pre>
   Eruption                      Date           Volume in km^3
