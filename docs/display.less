@@ -12,3 +12,14 @@ header li:last-child { border-right: none; }
 .col:nth-child(1) {background-color: #ccc;}
 .col:nth-child(2) {background-color: #bbb;}
 .col:nth-child(3) {background-color: #aaa;}
+
+// grids
+.row [class*="col"] {
+	&:nth-child(odd) {
+		background-color: #333;
+		color: #FFF;
+	}
+	&:nth-child(even) {
+		background-color: #999;
+	}
+}
