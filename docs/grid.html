@@ -11,6 +11,22 @@
 	
 	<link rel="stylesheet/less" type="text/css" href="display.less" />
 	<link rel="stylesheet/less" type="text/css" href="../css/master.less" />
+	<script type="text/javascript">
+	    less = {
+	        env: "development", // or "production"
+	        async: false,       // load imports async
+	        fileAsync: false,   // load imports async when in a page under
+	                            // a file protocol
+	        poll: 1000,         // when in watch mode, time in ms between polls
+	        functions: {},      // user functions, keyed by name
+	        dumpLineNumbers: "comments", // or "mediaQuery" or "all"
+	        relativeUrls: false// whether to adjust url's to be relative
+	                            // if false, url's are already relative to the
+	                            // entry less file
+	        //rootpath: ":/a.com/"// a path to add on to the start of every url
+	                            //resource
+	    };
+	</script>
 	<script type="text/javascript" src="../js/less.js"></script>
 	<script type="text/javascript" src="../js/modernizr.custom.js"></script>
 
@@ -39,6 +55,8 @@
 	
 </header>
 
+	<h2>Grid Columns</h2>
+	<p>These have no padding and are perfect for content</p>
 	<div class="row">
 		<div class="col1">COL 1</div>
 		<div class="col15">COL 15</div>
@@ -101,6 +119,14 @@
 	</div>
 	<div class="row">
 		<div class="col16">COL 16</div>
+	</div>
+
+	<h2>Text Row</h2>
+	<p>These have no padding and are perfect for content</p>
+	<div class="row txt-row">
+		<div class="col4 txt-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut nibh non nisl pharetra accumsan. Proin interdum euismod tellus et aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris non erat lorem. Sed quis erat ac ante bibendum volutpat vitae dictum ipsum. Quisque commodo mauris non velit accumsan commodo. Praesent ac metus vitae nunc convallis varius quis quis massa. Duis nec tortor nec velit mattis vehicula quis eu enim. Pellentesque eget vulputate dui. In ut lacus nisi. Vestibulum lobortis, nunc ac iaculis tristique, quam nulla lacinia arcu, eu porta nibh ipsum vulputate dui. Curabitur dui velit, dictum quis blandit id, euismod sed lectus. In in mauris tortor, sit amet malesuada est.</div>
+		<div class="col8">Vestibulum tortor erat, gravida id sagittis eget, auctor a est. Duis feugiat nunc eget justo auctor tincidunt. Mauris ut mauris ligula. Vestibulum ac est sed arcu posuere faucibus. Cras laoreet, dolor nec egestas eleifend, libero velit placerat ligula, ut venenatis nunc nisl id ante. Donec laoreet augue non erat ultricies vestibulum. Integer ultricies vestibulum massa, in dictum libero facilisis quis. Proin venenatis, ligula sed eleifend elementum, libero ligula egestas est, non luctus erat orci sit amet lacus. In suscipit elementum nunc ut accumsan. Sed nibh dui, condimentum in bibendum vitae, facilisis non arcu. Integer malesuada lacus a arcu gravida ut porta urna ultricies. Proin consequat hendrerit nunc nec vulputate. In nec velit nisi, in luctus tortor. Praesent et felis at leo vulputate mattis non vitae ante. Nam placerat tellus cursus elit mollis ultrices. Vivamus sollicitudin, massa vel cursus tempus, est enim varius odio, vitae placerat nulla purus ac magna. Phasellus quis risus interdum ligula congue tempor. Integer vel tortor eu libero elementum auctor id scelerisque justo. Mauris varius orci ut nunc venenatis vehicula. Maecenas nulla felis, posuere commodo lacinia ac, aliquam eget purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam sollicitudin ornare aliquam. Suspendisse at metus urna. Pellentesque ut risus dolor.</div>
+		<div class="col4 txt-col">Donec tempor, neque fringilla eleifend lobortis, turpis enim dapibus justo, sit amet suscipit nunc eros quis urna. Nullam mattis, nisl ultricies gravida hendrerit, tortor enim lobortis nisi, vel facilisis neque arcu id magna. Maecenas non sapien magna. Morbi sit amet erat at velit malesuada auctor eu id augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 	</div>
 
 </body>

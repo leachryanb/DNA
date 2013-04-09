@@ -1,6 +1,6 @@
 /*
 *
-* DNA
+* DNA: GRIDS
 *
 */
 
@@ -15,21 +15,23 @@ body {
 }
 .row {
 	width: 100%;
-	//margin-bottom: .5em;
+	overflow: hidden;
+	padding-bottom: .5em;
+
 	// base column styles
 	> [class*="col"] {
-		padding: 0 .5em 1em;
 		display: inline-block;
 		float: left;
 		box-sizing: border-box;
-		// removing the padding on the first column
-		&:first-child {
-			padding-left: 0;
+		margin-bottom: -99999px;
+		padding-bottom: 99999px;
+
+		&.txt-col {
+			padding-left: .5em;
+			padding-top: .5em;
+			padding-right: .5em;
 		}
-		// removing the padding on the last column
-		&:last-child {
-			padding-right: 0;
-		}
+
 	}
 	// clearing
 	&:after {
