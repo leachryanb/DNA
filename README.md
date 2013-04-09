@@ -1,5 +1,3 @@
 # DNA #
-
+## Dang! Nice Architecture ##
 ---
-
-Dang! Nice Architecture
