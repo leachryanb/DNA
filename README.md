@@ -24,7 +24,7 @@ Dang! Nice Architecture
 | Typography         |      | x    | x      |
 | Grids              |      | x    | x      |
 | Module types       |      | x    | x      |
-| **Interaction      |      |      | x      |
+| **Interaction**    |      |      | x      |
 | Dropdowns          |      |      | x      |
 | Tabs               |      |      | x      |
 | Tooltips           |      |      | x      |
