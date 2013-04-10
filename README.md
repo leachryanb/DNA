@@ -3,6 +3,9 @@ Dang! Nice Architecture
 
 ---
 
+DNA is a simple CSS framwork that uses [LESS](http://lesscss.org) and [Modernizr](http://modernizr.com).
+
+---
 
 | Layouts            | BASE | TIER | TIER 2 |
 | ------------------ |:----:|:----:| :-----:|
