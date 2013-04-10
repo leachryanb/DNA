@@ -6,15 +6,15 @@ Dang! Nice Architecture
 
 | Layouts            | BASE   | TIER 1   | TIER 2   |
 | ------------------ | :----: | :------: | :------: |
-| 1 column       	 | x      | x        | x        |
-| 2 column       	 | x      | x        | x        |
-| 3 column       	 | x      | x        | x        |
-| 4 column       	 | x      | x        | x        |
-| 5 column       	 | x      | x        | x        |
-| 6 column       	 | x      | x        | x        |
-| Full Width     	 | x      | x        | x        |
-|                	 |        |          |          |
-| **CSS Resets** 	 | x      | x        | x        |
+| 1 column           | x      | x        | x        |
+| 2 column           | x      | x        | x        |
+| 3 column           | x      | x        | x        |
+| 4 column           | x      | x        | x        |
+| 5 column           | x      | x        | x        |
+| 6 column           | x      | x        | x        |
+| Full Width         | x      | x        | x        |
+|                    |        |          |          |
+| **CSS Resets**     | x      | x        | x        |
 | Normalize.css 1.0  |        | x        | x        |
 | Universal Selector |        | x        | x        |
 | Yahoo (YUI 3)      |        | x        | x        |
