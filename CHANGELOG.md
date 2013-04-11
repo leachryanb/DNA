@@ -1,4 +1,4 @@
-## V0.1 (April 11, 2013)
+## (April 11, 2013)
 
 - Adding **CHANGELOG.md** file
 - **Layouts**
