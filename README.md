@@ -3,7 +3,7 @@ Dang! Nice Architecture
 
 ---
 
-DNA is a simple CSS framwork that uses [LESS](http://lesscss.org) and [Modernizr](http://modernizr.com).
+DNA is an uncomplicated CSS framwork that uses [LESS](http://lesscss.org) and [Modernizr](http://modernizr.com).
 
 ---
 
