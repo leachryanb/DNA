@@ -5,9 +5,9 @@
 */
 
 // DONT TOUCH BELOW HERE
-@width:(@pgWidth / @gs);
-.width(@gNum: 1) {
-	width: (@width * @gNum);
+@width:(@pgWidth / @cols);
+.width(@colNum: 1) {
+	width: (@width * @colNum);
 }
 body {
 	width: @pgWidth;
@@ -43,12 +43,12 @@ body {
 		height: 0;
 	}
 	// setting up the columns and width based on variables
-	.loop (@gNum) when (@gNum > 0) {
-		(~".g@{gNum}") {
-			.width(@gNum);
+	.loop (@colNum) when (@colNum > 0) {
+		(~".g@{colNum}") {
+			.width(@colNum);
 		}
 		.loop(@colNum - 1);
 	}
 	.loop (0) {}
-	.loop (@gs);
+	.loop (@cols);
 }
