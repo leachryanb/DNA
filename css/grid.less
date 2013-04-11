@@ -5,9 +5,9 @@
 */
 
 // DONT TOUCH BELOW HERE
-@width:(@pgWidth / @cols);
-.width(@colNum: 1) {
-	width: (@width * @colNum);
+@width:(@pgWidth / @gs);
+.width(@gNum: 1) {
+	width: (@width * @gNum);
 }
 body {
 	width: @pgWidth;
@@ -19,14 +19,14 @@ body {
 	padding-bottom: .5em;
 
 	// base column styles
-	> [class*="col"] {
+	> [class*="g"] {
 		display: inline-block;
 		float: left;
 		box-sizing: border-box;
 		margin-bottom: -99999px;
 		padding-bottom: 99999px;
 
-		&.txt-col {
+		&.txt-g {
 			padding-left: .5em;
 			padding-top: .5em;
 			padding-right: .5em;
@@ -43,12 +43,12 @@ body {
 		height: 0;
 	}
 	// setting up the columns and width based on variables
-	.loop (@colNum) when (@colNum > 0) {
-		(~".col@{colNum}") {
-			.width(@colNum);
+	.loop (@gNum) when (@gNum > 0) {
+		(~".g@{gNum}") {
+			.width(@gNum);
 		}
 		.loop(@colNum - 1);
 	}
 	.loop (0) {}
-	.loop (@cols);
+	.loop (@gs);
 }
