@@ -28,6 +28,131 @@
 * p3 = pattern3
 * etc.
 */
+
+.l1 {
+	> .col {
+		width: 50%;
+	}
+}
+.l2 {
+	> .col {
+		width: 50%;
+	}
+}
+.l3 {
+	> .col {
+		width: 33%;
+	}
+}
+
+.alpha {
+	.l2 {
+		&.p1 {
+			> .col:nth-child(1) {
+				width: 40%;
+			}
+			> .col:nth-child(2) {
+				width: 60%;
+			}
+		}
+		&.p2 {
+			> .col:nth-child(1) {
+				width: 30%;
+			}
+			> .col:nth-child(2) {
+				width: 70%;
+			}
+		}
+		&.p3 {
+			> .col:nth-child(1) {
+				width: 20%;
+			}
+			> .col:nth-child(2) {
+				width: 80%;
+			}
+		}
+	}
+	.l3 {
+		&.p1 {
+			> .col:nth-child(1) {
+				width: 20%;
+			}
+			> .col:nth-child(2) {
+				width: 60%;
+			}
+			> .col:nth-child(3) {
+				width: 20%;
+			}
+		}
+		&.p2 {
+			> .col:nth-child(1) {
+				width: 60%;
+			}
+			> .col:nth-child(2) {
+				width: 20%;
+			}
+			> .col:nth-child(3) {
+				width: 20%;
+			}
+		}
+	}
+}
+
+.beta {
+	.l2 {
+		&.p1 {
+			> .col:nth-child(1) {
+				width: 60%;
+			}
+			> .col:nth-child(2) {
+				width: 40%;
+			}
+		}
+		&.p2 {
+			> .col:nth-child(1) {
+				width: 70%;
+			}
+			> .col:nth-child(2) {
+				width: 30%;
+			}
+		}
+		&.p3 {
+			> .col:nth-child(1) {
+				width: 20%;
+			}
+			> .col:nth-child(2) {
+				width: 80%;
+			}
+		}
+	}
+	.l3 {
+		&.p1 {
+			> .col:nth-child(1) {
+				width: 40%;
+			}
+			> .col:nth-child(2) {
+				width: 20%;
+			}
+			> .col:nth-child(3) {
+				width: 40%;
+			}
+		}
+		&.p2 {
+			> .col:nth-child(1) {
+				width: 20%;
+			}
+			> .col:nth-child(2) {
+				width: 20%;
+			}
+			> .col:nth-child(3) {
+				width: 60%;
+			}
+		}
+	}
+}
+
+
+/*
 .l2 {
 	> .col {
 		width: 50%;
@@ -131,3 +256,4 @@
 	}
 }
 
+*/
