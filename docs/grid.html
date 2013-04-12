@@ -27,9 +27,20 @@
 	                            //resource
 	    };
 	</script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/less.js"></script>
 	<script type="text/javascript" src="../js/modernizr.custom.js"></script>
 
+	<script>
+		$(function() {
+
+			$('.wRange').change(function() {
+				var wrng = $(this).val();
+				$('.grows').css('width', wrng);
+			})
+
+		});
+	</script>
 </head>
 <body>
 <header role="banner">
@@ -52,84 +63,84 @@
 	<h2>Content Styles</h2>
 	
 	<p>The following is an sample of the grid system with <strong>16</strong> columns.</p>
+	<p>The number of columns is user
 	
 	<hr>
 	
 </header>
 
-	<h2>Grid Columns</h2>
+<input class="wRange" type="range" name="width" min="1" max="1024" />
+
+<div class="width"></div>
+
+<section class="grows">	
+	<h2>Grid in Rows</h2>
 	<p>These have no padding and are perfect for content</p>
 	<div class="row">
-		<div class="g1">COL 1</div>
-		<div class="g15">COL 15</div>
+		<div class="g1">G 1</div>
+		<div class="g15">G 15</div>
 	</div>
 	<div class="row">
-		<div class="g2">COL 2</div>
-		<div class="g14">COL 14</div>
+		<div class="g2">G 2</div>
+		<div class="g14">G 14</div>
 	</div>
 	<div class="row">
-		<div class="g3">COL 3</div>
-		<div class="g13">COL 13</div>
+		<div class="g3">G 3</div>
+		<div class="g13">G 13</div>
 	</div>
 	<div class="row">
-		<div class="g4">COL 4</div>
-		<div class="g12">COL 12</div>
+		<div class="g4">G 4</div>
+		<div class="g12">G 12</div>
 	</div>
 	<div class="row">
-		<div class="g5">COL 5</div>
-		<div class="g11">COL 11</div>
+		<div class="g5">G 5</div>
+		<div class="g11">G 11</div>
 	</div>
 	<div class="row">
-		<div class="g6">COL 6</div>
-		<div class="g10">COL 10</div>
+		<div class="g6">G 6</div>
+		<div class="g10">G 10</div>
 	</div>
 	<div class="row">
-		<div class="g7">COL 7</div>
-		<div class="g9">COL 9</div>
+		<div class="g7">G 7</div>
+		<div class="g9">G 9</div>
 	</div>
 	<div class="row">
-		<div class="g8">COL 8</div>
-		<div class="g8">COL 8</div>
+		<div class="g8">G 8</div>
+		<div class="g8">G 8</div>
 	</div>
 	<div class="row">
-		<div class="g9">COL 9</div>
-		<div class="g7">COL 7</div>
+		<div class="g9">G 9</div>
+		<div class="g7">G 7</div>
 	</div>
 	<div class="row">
-		<div class="g10">COL 10</div>
-		<div class="g6">COL 6</div>
+		<div class="g10">G 10</div>
+		<div class="g6">G 6</div>
 	</div>
 	<div class="row">
-		<div class="g11">COL 11</div>
-		<div class="g5">COL 5</div>
+		<div class="g11">G 11</div>
+		<div class="g5">G 5</div>
 	</div>
 	<div class="row">
-		<div class="g12">COL 12</div>
-		<div class="g4">COL 4</div>
+		<div class="g12">G 12</div>
+		<div class="g4">G 4</div>
 	</div>
 	<div class="row">
-		<div class="g13">COL 13</div>
-		<div class="g3">COL 3</div>
+		<div class="g13">G 13</div>
+		<div class="g3">G 3</div>
 	</div>
 	<div class="row">
-		<div class="g14">COL 14</div>
-		<div class="g2">COL 2</div>
+		<div class="g14">G 14</div>
+		<div class="g2">G 2</div>
 	</div>
 	<div class="row">
-		<div class="g15">COL 15</div>
-		<div class="g1">COL 1</div>
+		<div class="g15">G 15</div>
+		<div class="g1">G 1</div>
 	</div>
 	<div class="row">
-		<div class="g16">COL 16</div>
+		<div class="g16">G 16</div>
 	</div>
 
-	<h2>Text Row</h2>
-	<p>These have no padding and are perfect for content</p>
-	<div class="row txt-row">
-		<div class="g4 txt-col">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut nibh non nisl pharetra accumsan. Proin interdum euismod tellus et aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris non erat lorem. Sed quis erat ac ante bibendum volutpat vitae dictum ipsum. Quisque commodo mauris non velit accumsan commodo. Praesent ac metus vitae nunc convallis varius quis quis massa. Duis nec tortor nec velit mattis vehicula quis eu enim. Pellentesque eget vulputate dui. In ut lacus nisi. Vestibulum lobortis, nunc ac iaculis tristique, quam nulla lacinia arcu, eu porta nibh ipsum vulputate dui. Curabitur dui velit, dictum quis blandit id, euismod sed lectus. In in mauris tortor, sit amet malesuada est.</div>
-		<div class="g8">Vestibulum tortor erat, gravida id sagittis eget, auctor a est. Duis feugiat nunc eget justo auctor tincidunt. Mauris ut mauris ligula. Vestibulum ac est sed arcu posuere faucibus. Cras laoreet, dolor nec egestas eleifend, libero velit placerat ligula, ut venenatis nunc nisl id ante. Donec laoreet augue non erat ultricies vestibulum. Integer ultricies vestibulum massa, in dictum libero facilisis quis. Proin venenatis, ligula sed eleifend elementum, libero ligula egestas est, non luctus erat orci sit amet lacus. In suscipit elementum nunc ut accumsan. Sed nibh dui, condimentum in bibendum vitae, facilisis non arcu. Integer malesuada lacus a arcu gravida ut porta urna ultricies. Proin consequat hendrerit nunc nec vulputate. In nec velit nisi, in luctus tortor. Praesent et felis at leo vulputate mattis non vitae ante. Nam placerat tellus cursus elit mollis ultrices. Vivamus sollicitudin, massa vel cursus tempus, est enim varius odio, vitae placerat nulla purus ac magna. Phasellus quis risus interdum ligula congue tempor. Integer vel tortor eu libero elementum auctor id scelerisque justo. Mauris varius orci ut nunc venenatis vehicula. Maecenas nulla felis, posuere commodo lacinia ac, aliquam eget purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam sollicitudin ornare aliquam. Suspendisse at metus urna. Pellentesque ut risus dolor.</div>
-		<div class="g4 txt-col">Donec tempor, neque fringilla eleifend lobortis, turpis enim dapibus justo, sit amet suscipit nunc eros quis urna. Nullam mattis, nisl ultricies gravida hendrerit, tortor enim lobortis nisi, vel facilisis neque arcu id magna. Maecenas non sapien magna. Morbi sit amet erat at velit malesuada auctor eu id augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-	</div>
+</section>
 
 </body>
 </html>

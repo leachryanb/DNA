@@ -16,20 +16,21 @@ body {
 .row {
 	width: 100%;
 	overflow: hidden;
-	padding-bottom: .5em;
-
-	// base column styles
-	> [class*="g"] {
+}
+.pad-row {
+	overflow: hidden;
+	[class*="g"] {
+		margin-bottom: -99999px;
+		padding-bottom: 99999px;
+	}
+}
+	[class*="g"] {
 		display: inline-block;
 		float: left;
 		box-sizing: border-box;
-		margin-bottom: -99999px;
-		padding-bottom: 99999px;
 
 		&.txt-g {
-			padding-left: .5em;
-			padding-top: .5em;
-			padding-right: .5em;
+			padding: .5em;
 		}
 
 	}
@@ -51,4 +52,4 @@ body {
 	}
 	.loop (0) {}
 	.loop (@cols);
-}
+//}
