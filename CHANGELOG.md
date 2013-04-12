@@ -1,6 +1,7 @@
 ## April 12, 2013
 
 - Fixing [thewendees](https://github.com/thewendee) commit from yesterday
+	- It went into some tree branch, more info [here](https://github.com/wylie/DNA/pull/2)
 - Updating the grids.less file
 - Added a .gitignore file 
 
