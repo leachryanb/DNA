@@ -1,7 +1,8 @@
 ## April 12, 2013
 
 - Fixing [thewendees](https://github.com/thewendee) commit from yesterday
-- Updating the grids.less file 
+- Updating the grids.less file
+- Added a .gitignore file 
 
 ## April 11, 2013
 
