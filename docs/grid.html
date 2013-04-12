@@ -27,20 +27,8 @@
 	                            //resource
 	    };
 	</script>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/less.js"></script>
 	<script type="text/javascript" src="../js/modernizr.custom.js"></script>
-
-	<script>
-		$(function() {
-
-			$('.wRange').change(function() {
-				var wrng = $(this).val();
-				$('.grows').css('width', wrng);
-			})
-
-		});
-	</script>
 </head>
 <body>
 <header role="banner">
@@ -68,10 +56,6 @@
 	<hr>
 	
 </header>
-
-<input class="wRange" type="range" name="width" min="1" max="1024" />
-
-<div class="width"></div>
 
 <section class="grows">	
 	<h2>Grid in Rows</h2>

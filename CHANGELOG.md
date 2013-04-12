@@ -1,3 +1,8 @@
+## April 12, 2013
+
+- Fixing [thewendees](https://github.com/thewendee) commit from yesterday
+- Updating the grids.less file 
+
 ## April 11, 2013
 
 - Adding **CHANGELOG.md** file
