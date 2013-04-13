@@ -5,51 +5,36 @@
 */
 
 // DONT TOUCH BELOW HERE
-@width:(@pgWidth / @cols);
-.width(@colNum: 1) {
-	width: (@width * @colNum);
+@width:(@pgWidth / @g); // grid box width is the page width divided by the number of columns
+/*
+.width(@gNum: 1) {
+	width: (@width * @gNum);
 }
-body {
-	width: @pgWidth;
-	margin: 0 auto;
-}
-.row {
+*/
+[class*="gr"] {
 	width: 100%;
 	overflow: hidden;
-}
-.pad-row {
-	overflow: hidden;
-	[class*="g"] {
-		margin-bottom: -99999px;
-		padding-bottom: 99999px;
-	}
-}
-	[class*="g"] {
-		display: inline-block;
-		float: left;
-		box-sizing: border-box;
 
-		&.txt-g {
-			padding: .5em;
+	.g {
+		background-color: grey;
+		&:nth-child(odd) {
+			background-color: lightgrey;
 		}
+	}
+}
+.g {
+	float: left;
+	display: inline-block;
+}
 
-	}
-	// clearing
-	&:after {
-		visibility: hidden;
-		display: block;
-		font-size: 0;
-		content: " ";
-		clear: both;
-		height: 0;
-	}
-	// setting up the columns and width based on variables
-	.loop (@colNum) when (@colNum > 0) {
-		(~".g@{colNum}") {
-			.width(@colNum);
+
+.loop (@gNum) when (@gNum > 0) {
+	(~".gr@{gNum}") {
+		.g {
+			width: @gWidth / @gNum;
 		}
-		.loop(@colNum - 1);
 	}
-	.loop (0) {}
-	.loop (@cols);
-//}
+	.loop(@gNum - 1);
+}
+.loop (0) {}
+.loop (@g);
